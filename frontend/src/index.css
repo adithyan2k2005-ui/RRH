@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rr-bg-primary: #080510;
+  --rr-bg-secondary: #120817;
+  --rr-surface-primary: #20091F;
+  --rr-surface-elevated: #2A1028;
+  --rr-royal-burgundy: #400A2D;
+  --rr-primary-accent: #C21868;
+  --rr-secondary-accent: #8F2455;
+  --rr-text-primary: #F5EAF2;
+  --rr-text-secondary: #BFA8BA;
+  --rr-gold: #D4AF37;
+  --rr-silver: #E2E8F0;
+  --rr-bronze: #CD7F32;
+}
+
+@layer base {
+  body {
+    background-color: #080510;
+    color: #F5EAF2;
+    overflow-x: hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom scrollbar for deep plum aesthetic */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080510;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #400A2D;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8F2455;
+}
+
+/* Stadium ambient lighting & fine geometric pattern */
+.rr-stadium-mesh {
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(64, 10, 45, 0.35) 0%, transparent 65%),
+    radial-gradient(circle at 85% 15%, rgba(194, 24, 104, 0.12) 0%, transparent 50%),
+    linear-gradient(rgba(64, 10, 45, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(64, 10, 45, 0.08) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+}
+
+/* Royal card surface */
+.rr-card {
+  background: #120817;
+  border: 1px solid #400A2D;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(245, 234, 242, 0.04);
+}
+
+.rr-card-elevated {
+  background: #20091F;
+  border: 1px solid rgba(194, 24, 104, 0.3);
+  box-shadow: 0 14px 40px -8px rgba(0, 0, 0, 0.7), 0 0 20px -5px rgba(64, 10, 45, 0.4);
+}
+
+.rr-card-interactive {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rr-card-interactive:hover {
+  transform: translateY(-2px);
+  border-color: rgba(194, 24, 104, 0.6);
+  box-shadow: 0 16px 45px -8px rgba(0, 0, 0, 0.8), 0 0 25px -5px rgba(194, 24, 104, 0.25);
+}
+
+/* Subtle luxury glow */
+.rr-glow-pink {
+  box-shadow: 0 0 25px -5px rgba(194, 24, 104, 0.35);
+}
+
+.rr-glow-gold {
+  box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.3);
+}
+
+.rr-gradient-title {
+  background: linear-gradient(135deg, #FFFFFF 20%, #F5EAF2 60%, #C21868 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Respect motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

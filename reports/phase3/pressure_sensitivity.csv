@@ -1,0 +1,4 @@
+threshold_config,low_threshold,high_threshold,batting_high_count,batting_high_pct,batting_med_pct,batting_low_pct,bowling_high_count,bowling_high_pct,bowling_med_pct,bowling_low_pct
+Low<35.0_High>=60.0,35.0,60.0,29743,14.8,31.38,53.82,57730,28.72,47.73,23.55
+Low<40.0_High>=65.0,40.0,65.0,23228,11.56,26.0,62.44,36779,18.3,50.62,31.08
+Low<45.0_High>=70.0,45.0,70.0,17666,8.79,21.76,69.45,19593,9.75,50.7,39.56

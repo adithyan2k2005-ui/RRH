@@ -1,0 +1,75 @@
+{
+  "project_name": "superr-selector-analytics",
+  "hackathon": "Rajasthan Royals SupeRR Selector Season 2 \u2014 Round 1",
+  "audit_timestamp": "2026-11-18T10:04:02Z",
+  "auditor": "Independent Principal Software Quality Auditor & Cricket Data Scientist",
+  "verdicts": {
+    "statistical_model_readiness": "PASS",
+    "official_hackathon_submission_readiness": "PASS",
+    "website_functional_readiness": "PASS",
+    "overall_determination": "PASS_WITH_WARNINGS"
+  },
+  "requirements_summary": {
+    "total_audited": 14,
+    "verified_complete": 14,
+    "incomplete": 0,
+    "failed": 0,
+    "unverified": 0,
+    "compliance_percentage": 100.0
+  },
+  "test_metrics": {
+    "pytest_tests_executed": 142,
+    "pytest_tests_passed": 142,
+    "pytest_tests_failed": 0,
+    "verify_project_tests_executed": 136,
+    "verify_project_tests_passed": 136,
+    "verify_project_tests_failed": 0,
+    "submission_gates_evaluated": 12,
+    "submission_gates_passed": 12,
+    "browser_stages_evaluated": 8,
+    "browser_stages_passed": 8,
+    "browser_console_errors": 0,
+    "browser_network_failures": 0
+  },
+  "statistical_reconciliation": {
+    "formula": "0.40 * S_impact + 0.25 * S_uplift + 0.20 * S_consistency + 0.15 * S_confidence",
+    "shrinkage_parameters": {
+      "batting_k0": 20.0,
+      "bowling_k0": 24.0
+    },
+    "eligible_batters_scored": 155,
+    "eligible_bowlers_scored": 270,
+    "total_candidates_scored": 425,
+    "recomputation_mae": 0.0,
+    "top_1_batter": {
+      "id": 46066,
+      "name": "Vipraj Nigam",
+      "score": 92.69
+    },
+    "top_1_bowler": {
+      "id": 6237,
+      "name": "Manimaran Siddharth",
+      "score": 88.46
+    }
+  },
+  "dataset_funnel": {
+    "total_matches": 883,
+    "active_matches": 867,
+    "weather_abandoned_matches": 16,
+    "competitions": 141,
+    "total_deliveries": 200999,
+    "unique_teams": 353,
+    "player_mappings": 6413,
+    "playing_xi_entries": 28381,
+    "dropped_rows": 0
+  },
+  "cryptographic_hashes": {
+    "outputs_top_10_batters_csv": "be85fb0d232bacbc8d5714c548b00eb7ff66c74060b6c11dfb3a3675cf9f24bf",
+    "submission_top_10_batters_csv": "be85fb0d232bacbc8d5714c548b00eb7ff66c74060b6c11dfb3a3675cf9f24bf",
+    "outputs_top_10_bowlers_csv": "1febb963e22c86fc7dac90e1435e82e98c5484321ad24f63957a63e643b1fd23",
+    "submission_top_10_bowlers_csv": "1febb963e22c86fc7dac90e1435e82e98c5484321ad24f63957a63e643b1fd23",
+    "methodology_report_pdf": "f6845d3ca9181cde243abfa1c99090742e477a6eb01076592a3fd1e6b99f45b3",
+    "submission_zip": "b4125683c882b5d1c39b684935407fff9df95ba935e39df770694d2fd0e53ef8",
+    "verification_manifest_json": "e6e191af568dc510c0ecc1b26899f840ea2f723f79e723d401fefc55f4c0f7d6"
+  }
+}

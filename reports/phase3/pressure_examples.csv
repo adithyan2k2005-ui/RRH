@@ -1,0 +1,7 @@
+scenario_name,match_id,innings,over_ball,score_before,wickets_in_hand,balls_remaining,target,required_run_rate,batting_pressure_score,bowling_pressure_score,match_tension_score,batting_class,bowling_class,justification
+High Batting Pressure (Steep Chase),13512,2,14.4,81,3,39,172,14.0,82.56,15.84,24.09,HIGH_PRESSURE,LOW_PRESSURE,Batting team needs 14+ rpo with only 3 wickets in hand. Batting pressure is severe.
+Low Batting Pressure (Comfortable Chase),13511,2,14.2,79,9,41,104,3.66,7.72,50.83,28.34,LOW_PRESSURE,MEDIUM_PRESSURE,Batting team requires under 4 rpo with 8+ wickets in hand; minimal difficulty.
+High Bowling Pressure (Death Defense),13522,2,18.1,139,6,18,158,6.33,29.84,61.37,54.85,LOW_PRESSURE,MEDIUM_PRESSURE,Match in the balance in death overs; batting team has wickets in hand. Bowler has zero margin for error.
+Low Bowling Pressure (Massive Defensive Cushion),13512,2,19.5,137,2,8,172,26.25,93.31,4.12,12.81,HIGH_PRESSURE,LOW_PRESSURE,Batting team needs impossible 25+ rpo. Batting desperation is high but bowling pressure is negligible.
+First-Innings Collapse Pressure,13511,1,8.1,29,5,78,-1,-1.0,56.83,35.32,46.08,MEDIUM_PRESSURE,LOW_PRESSURE,Batting first team has lost 5+ wickets before over 12; severe pressure to avoid all-out while setting target.
+Knockout Stage Pressure,15187,2,16.1,139,7,30,189,10.0,47.96,77.38,82.01,MEDIUM_PRESSURE,HIGH_PRESSURE,Knockout fixture in final 5 overs; stakes multiplier elevates tension for both teams.

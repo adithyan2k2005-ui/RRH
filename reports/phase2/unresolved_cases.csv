@@ -1,0 +1,63 @@
+match_id,innings,delivery_seq,category,description,impact_on_phase3
+24353,2,106,Zero Legal Balls in Final Over,Over 18 ended after 1 wide for 2 runs winning the match immediately.,Legitimate cricket rule occurrence; handled safely without division by zero.
+14114,2,80,Retired Hurt Event,Player 1440 retired hurt; is_wicket is False.,Excluded from bowler wickets and batter dismissals.
+15610,1,38,Retired Hurt Event,Player 6433 retired hurt; is_wicket is False.,Excluded from bowler wickets and batter dismissals.
+16064,2,10,Retired Hurt Event,Player 126 retired hurt; is_wicket is False.,Excluded from bowler wickets and batter dismissals.
+20188,1,64,Retired Hurt Event,Player 2003 retired hurt; is_wicket is False.,Excluded from bowler wickets and batter dismissals.
+20243,1,99,Retired Hurt Event,Player 4219 retired hurt; is_wicket is False.,Excluded from bowler wickets and batter dismissals.
+20880,2,65,Retired Hurt Event,Player 2533 retired hurt; is_wicket is False.,Excluded from bowler wickets and batter dismissals.
+28964,1,65,Retired Hurt Event,Player 1568 retired hurt; is_wicket is False.,Excluded from bowler wickets and batter dismissals.
+29926,2,54,Retired Hurt Event,Player 6931 retired hurt; is_wicket is False.,Excluded from bowler wickets and batter dismissals.
+31709,1,80,Retired Hurt Event,Player 3024 retired hurt; is_wicket is False.,Excluded from bowler wickets and batter dismissals.
+37094,2,38,Retired Hurt Event,Player 4780 retired hurt; is_wicket is False.,Excluded from bowler wickets and batter dismissals.
+40725,2,36,Retired Hurt Event,Player 2258 retired hurt; is_wicket is False.,Excluded from bowler wickets and batter dismissals.
+40763,2,116,Retired Hurt Event,Player 4904 retired hurt; is_wicket is False.,Excluded from bowler wickets and batter dismissals.
+13613,3,1,Super Over Playing XI Duplicates,Playing XI contains duplicate player rows due to super over batting order.,Deliveries reconstructed accurately; playing XI joins require distinct keys.
+21176,3,1,Super Over Playing XI Duplicates,Playing XI contains duplicate player rows due to super over batting order.,Deliveries reconstructed accurately; playing XI joins require distinct keys.
+28962,3,1,Super Over Playing XI Duplicates,Playing XI contains duplicate player rows due to super over batting order.,Deliveries reconstructed accurately; playing XI joins require distinct keys.
+37087,1,1,Playing XI Registry Omission,Syed Haider & Basil Hameed batted/bowled in BBB but were omitted from playing_eleven.csv.,Player mapping verified in competition_team_player_mapping; full identity intact.
+37092,1,1,Playing XI Registry Omission,Syed Haider & Basil Hameed batted/bowled in BBB but were omitted from playing_eleven.csv.,Player mapping verified in competition_team_player_mapping; full identity intact.
+37095,1,1,Playing XI Registry Omission,Syed Haider & Basil Hameed batted/bowled in BBB but were omitted from playing_eleven.csv.,Player mapping verified in competition_team_player_mapping; full identity intact.
+13524,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+14116,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+14122,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+14143,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+14144,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+14160,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+15795,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+16259,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+16317,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+17764,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+17765,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+19960,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+20194,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+20236,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+21176,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+21178,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+24822,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+28963,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+29926,1,0,Speed Gun Outlier,Radar speed values > 165 km/h recorded due to decimal point logging error.,bowl_speed should not be used as primary pressure feature.
+15410,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'Match Abandoned' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+15546,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+17765,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+20226,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'Match Abandoned' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+21406,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'Match Abandoned' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+28333,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+31707,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+37353,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+35424,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+40737,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+40748,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+40751,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+39983,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+39985,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+41975,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+41979,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+45390,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+45908,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+46311,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+46747,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+46749,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+47968,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+50136,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.
+50408,1,0,Incomplete Match (Weather / Abandoned),Match resulted in 'No Result' after partial innings.,Pre-delivery state reconstructed; phase 3 can filter incomplete matches if needed.

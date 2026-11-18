@@ -1,0 +1,99 @@
+======================================================================
+SUPERR SELECTOR — MASTER VERIFICATION TEST EXECUTION LOG
+Audit Timestamp: 2026-11-18T10:04:02Z
+Platform: win32 | Python 3.13.7 | Pytest 9.2.0 | FastAPI | Vite 5
+======================================================================
+
+--- PART 1: PROJECT VERIFICATION RUNNER (scripts/verify_project.py) ---
+======================================================================
+SupeRR Selector — Verification Runner & Submission Readiness Engine
+======================================================================
+[*] Running verification for Phase 1...
+    -> Phase 1 (Ingestion & Data Quality): PASS_WITH_WARNINGS (17 tests passed)
+[*] Running verification for Phase 2...
+    -> Phase 2 (Match-State Reconstruction): PASS (16 tests passed)
+[*] Running verification for Phase 3...
+    -> Phase 3 (Pressure Detection Engine): PASS (21 tests passed)
+[*] Running verification for Phase 4...
+    -> Phase 4 (Performance & Reliability Scoring): PASS (31 tests passed)
+[*] Running verification for Phase 5...
+    -> Phase 5 (Top-10 Rankings & Verification): PASS (29 tests passed)
+[*] Running verification for Phase 6...
+    -> Phase 6 (Methodology Report & Packaging): PASS (6 tests passed)
+[*] Running verification for Phase 7...
+    -> Phase 7 (Full-Stack Web Application): PASS (16 tests passed)
+[*] Evaluating official submission readiness gates (12 gates)...
+    -> Gate 1 (Top 10 Batters Count): PASSED
+    -> Gate 2 (Top 10 Bowlers Count): PASSED
+    -> Gate 3 (Methodology PDF 8 Pages): PASSED
+    -> Gate 4 (Methodology Markdown Source): PASSED
+    -> Gate 5 (Selection Reference Document): PASSED
+    -> Gate 6 (Submission ZIP Package): PASSED
+    -> Gate 7 (Ranking CSV Hashes Aligned): PASSED
+    -> Gate 8 (Top Player Invariants): PASSED
+    -> Gate 9 (Sample Size Threshold): PASSED
+    -> Gate 10 (Dual Pressure Bounds): PASSED
+    -> Gate 11 (Dataset Row Counts): PASSED
+    -> Gate 12 (Dynamic Manifest Integrity): PASSED
+    -> Submission Gates: 12 / 12 PASSED
+----------------------------------------------------------------------
+[✓] Verification manifest saved to: reports/verification_manifest.json
+    Overall Status:        PASS_WITH_WARNINGS
+    Submission Readiness:  PASS
+    Website Readiness:     PASS
+    Total Tests Executed:  136 (136 passed)
+    Submission Gates:      12 / 12 passed
+======================================================================
+
+--- PART 2: AUTOMATED PYTEST SUITE (pytest tests/) ---
+============================= test session starts =============================
+platform win32 -- Python 3.13.7, pytest-9.2.0, pluggy-1.7.0
+rootdir: C:\Users\Adithyan R\Documents\RR\superr-selector-analytics
+configfile: pytest.ini
+plugins: anyio-4.16.0
+collected 142 items
+
+tests\backend\test_api_endpoints.py ...........                          [  7%]
+tests\backend\test_overview_contract.py .....                            [ 11%]
+tests\test_batting_metrics.py .....                                      [ 14%]
+tests\test_bowling_metrics.py ....                                       [ 17%]
+tests\test_consistency.py ..                                             [ 19%]
+tests\test_cricket_rules.py ....                                         [ 21%]
+tests\test_dataset_integrity.py ..........                               [ 28%]
+tests\test_delivery_order.py .....                                       [ 32%]
+tests\test_expected_performance.py ..                                    [ 33%]
+tests\test_ingestion.py ......                                           [ 38%]
+tests\test_match_state.py ...                                            [ 40%]
+tests\test_match_state_integration.py ....                               [ 42%]
+tests\test_phase4_integration.py ....                                    [ 45%]
+tests\test_phase5_integration.py .....                                   [ 49%]
+tests\test_player_baselines.py ..                                        [ 50%]
+tests\test_pressure_features.py .....                                    [ 54%]
+tests\test_pressure_integration.py .....                                 [ 57%]
+tests\test_pressure_leakage.py ...                                       [ 59%]
+tests\test_pressure_model.py ........                                    [ 65%]
+tests\test_ranking_eligibility.py ..                                     [ 66%]
+tests\test_ranking_engine.py ...                                         [ 69%]
+tests\test_ranking_integrity.py ..                                       [ 70%]
+tests\test_ranking_stability.py ..                                       [ 71%]
+tests\test_reliability.py ...                                            [ 73%]
+tests\test_reliability_audit.py .........                                [ 80%]
+tests\test_submission_integrity.py .....                                 [ 83%]
+tests\test_validation.py ...........                                     [ 91%]
+tests\test_verification_manifest.py ............                         [100%]
+
+======================= 142 passed, 1 warning in 22.60s =======================
+
+--- PART 3: HEADLESS BROWSER AUDIT SUITE (tests/test_browser_suite.py) ---
+Browser: Microsoft Edge (Chromium Engine 157.0.4341.60)
+Stage 1: Overview Desktop (1920x1080) -> PASS (0 console errors, 0 network failures)
+Stage 2: Data Explorer Desktop (1920x1080) -> PASS (0 console errors, 0 network failures)
+Stage 3: Match Replay Desktop (1920x1080) -> PASS (0 console errors, 0 network failures)
+Stage 4: Pressure Lab Desktop (1920x1080) -> PASS (0 console errors, 0 network failures)
+Stage 5: Player Intelligence Desktop (1920x1080) -> PASS (0 console errors, 0 network failures)
+Stage 6: Reliability Rankings Desktop (1920x1080) -> PASS (0 console errors, 0 network failures)
+Stage 7: Methodology Reports Desktop (1920x1080) -> PASS (0 console errors, 0 network failures)
+Stage 8: Mobile Rankings Viewport (390x844) -> PASS (0 console errors, 0 network failures)
+Total Browser Stages: 8 / 8 PASSED
+======================================================================
+END OF TEST EXECUTION LOG

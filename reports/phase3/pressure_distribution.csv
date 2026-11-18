@@ -1,0 +1,11 @@
+segment_type,segment_value,total_deliveries,bat_high_pct,bowl_high_pct,mean_bat_score,mean_bowl_score
+Format,T20I,106327,12.24,16.98,38.04,47.66
+Format,T20,94672,10.79,19.77,36.89,48.93
+Innings,Innings_1,105727,7.05,31.08,34.86,58.81
+Innings,Innings_2,95234,16.56,4.11,40.43,36.54
+Innings,Innings_3,25,0.0,32.0,23.15,61.36
+Innings,Innings_4,13,0.0,0.0,13.81,27.39
+Phase,Powerplay,64008,0.18,10.74,25.12,42.82
+Phase,Middle,92499,7.46,22.39,36.73,52.06
+Phase,Death,44454,36.47,20.65,56.95,48.18
+Phase,SuperOver,38,0.0,21.05,19.96,49.74

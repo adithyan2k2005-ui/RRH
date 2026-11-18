@@ -1,0 +1,170 @@
+{
+  "archive_file": "6af458274c1e8_data_pack.zip",
+  "archive_sha256": "82da62e94840e614ef136f0bb24168fe72b567c3eff71bf6b58488ac9b2b7f7d",
+  "files": {
+    "competitions.csv": {
+      "source_path": "data/raw/competitions.csv",
+      "file_size_bytes": 7624,
+      "sha256": "507ceb7189f972d4e4f299ddcfc97f3c3247af1913f6291106f161fa8353fd9b",
+      "row_count": 141,
+      "column_count": 4,
+      "columns": [
+        "comp_id",
+        "comp_name",
+        "match_format",
+        "season"
+      ],
+      "duplicate_rows": 0,
+      "null_counts": {}
+    },
+    "teams.csv": {
+      "source_path": "data/raw/teams.csv",
+      "file_size_bytes": 6922,
+      "sha256": "a65e5922a9b3bf49247b24fc9471782e700efb31f8dcc5042923238b87c50a5d",
+      "row_count": 353,
+      "column_count": 3,
+      "columns": [
+        "comp_id",
+        "team_id",
+        "team_name"
+      ],
+      "duplicate_rows": 0,
+      "null_counts": {}
+    },
+    "matches.csv": {
+      "source_path": "data/raw/matches.csv",
+      "file_size_bytes": 123864,
+      "sha256": "bb100ab84b8b9a15160c1f2315cf675210131a30e779ec5079fd5403dcf56eef",
+      "row_count": 883,
+      "column_count": 22,
+      "columns": [
+        "match_id",
+        "comp_id",
+        "match_number",
+        "match_date",
+        "stage",
+        "venue_id",
+        "venue_country",
+        "home_team_id",
+        "home_team",
+        "away_team_id",
+        "away_team",
+        "home_team_captain_id",
+        "away_team_captain_id",
+        "toss_win_team_id",
+        "toss_opted",
+        "man_of_the_match",
+        "first_inn_revised_overs",
+        "second_inn_revised_overs",
+        "revised_target",
+        "knock_out",
+        "win_team_id",
+        "result"
+      ],
+      "duplicate_rows": 0,
+      "null_counts": {
+        "home_team_captain_id": 44,
+        "away_team_captain_id": 45,
+        "toss_win_team_id": 15,
+        "toss_opted": 15,
+        "first_inn_revised_overs": 858,
+        "second_inn_revised_overs": 858,
+        "revised_target": 860,
+        "win_team_id": 41
+      }
+    },
+    "ball_by_ball.csv": {
+      "source_path": "data/raw/ball_by_ball.csv",
+      "file_size_bytes": 41071837,
+      "sha256": "01e2b4379edfbab6a6e456d304cb3c70f554cb312ef93d9588f3f32a82cb396e",
+      "row_count": 200999,
+      "column_count": 33,
+      "columns": [
+        "match_id",
+        "innings",
+        "overid",
+        "over_ball_num",
+        "innings_ball_num",
+        "batting_team_id",
+        "bowling_team_id",
+        "striker_id",
+        "striker_name",
+        "non_striker_id",
+        "non_striker_name",
+        "bowler_id",
+        "bowler_name",
+        "batting_type",
+        "bowling_type",
+        "batting_order",
+        "runs",
+        "is_four",
+        "is_six",
+        "is_wicket",
+        "dismissal_type_id",
+        "dismissal_type",
+        "dismissed_player_id",
+        "extras_type",
+        "extras1_runs",
+        "extras_2_runs",
+        "pace_or_spin",
+        "bowl_speed",
+        "stroke",
+        "delivery_style",
+        "over_or_around",
+        "on_or_off",
+        "delivery_ist_time"
+      ],
+      "duplicate_rows": 0,
+      "null_counts": {
+        "dismissal_type_id": 190118,
+        "dismissal_type": 190118,
+        "dismissed_player_id": 190107,
+        "extras_type": 189167,
+        "stroke": 6158,
+        "delivery_style": 391,
+        "over_or_around": 407
+      }
+    },
+    "competition_team_player_mapping.csv": {
+      "source_path": "data/raw/competition_team_player_mapping.csv",
+      "file_size_bytes": 462969,
+      "sha256": "1ded4e42a933618572d6e2c3a521c3257eb1844fab4456d567d77cbb2d3bbb12",
+      "row_count": 6413,
+      "column_count": 6,
+      "columns": [
+        "comp_id",
+        "comp_name",
+        "team_id",
+        "team_name",
+        "player_id",
+        "player_name"
+      ],
+      "duplicate_rows": 0,
+      "null_counts": {}
+    },
+    "playing_eleven.csv": {
+      "source_path": "data/raw/playing_eleven.csv",
+      "file_size_bytes": 966287,
+      "sha256": "7517c73722a28d5d61c808ccf0cbed315a8780586d02e946eb9a7f5daf011c27",
+      "row_count": 28381,
+      "column_count": 9,
+      "columns": [
+        "match_id",
+        "team_id",
+        "player_id",
+        "batting_order",
+        "is_played",
+        "is_captain",
+        "is_wk",
+        "is_impact",
+        "is_impact_off"
+      ],
+      "duplicate_rows": 0,
+      "null_counts": {
+        "batting_order": 8678,
+        "is_captain": 8667,
+        "is_wk": 8667
+      }
+    }
+  }
+}

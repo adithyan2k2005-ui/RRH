@@ -1,0 +1,42 @@
+{
+  "matches": {
+    "A_total_supplied_matches": 883,
+    "B_matches_with_ball_by_ball_coverage": 867,
+    "C_matches_with_valid_reconstructed_states": 867,
+    "D_matches_eligible_for_pressure_modelling": 867,
+    "E_matches_eligible_for_player_performance": 867,
+    "F_matches_contributing_to_top_10_rankings": 492,
+    "unplayed_or_abandoned_matches_without_deliveries": 16
+  },
+  "competitions": {
+    "all_competitions_in_registry": 141,
+    "competitions_represented_in_matches": 138,
+    "competitions_represented_in_deliveries": 138,
+    "competitions_with_zero_matches": 3
+  },
+  "teams": {
+    "all_team_records_in_teams_table": 353,
+    "distinct_team_ids": 38,
+    "teams_participating_in_matches": 38
+  },
+  "players": {
+    "all_mapped_player_ids_in_registry": 1217,
+    "players_appearing_in_playing_xi": 1082,
+    "players_observed_batting_or_bowling": 959,
+    "players_observed_batting": 893,
+    "players_observed_bowling": 647,
+    "evaluated_batters_pool": 888,
+    "eligible_batters_count": 155,
+    "evaluated_bowlers_pool": 647,
+    "eligible_bowlers_count": 270,
+    "top_10_batters_count": 10,
+    "top_10_bowlers_count": 10
+  },
+  "deliveries": {
+    "total_raw_deliveries": 200999,
+    "reconstructed_state_deliveries": 200999,
+    "pressure_state_deliveries": 200999,
+    "high_pressure_batting_deliveries": 23228,
+    "high_pressure_bowling_deliveries": 36779
+  }
+}

@@ -1,0 +1,11 @@
+rank,player_id,player_name,reliability_score,pressure_matches,pressure_balls_faced,pressure_runs,high_pressure_impact,ordinary_performance_baseline,pressure_uplift,consistency_metric,uncertainty_measure,eligibility_status
+1,46066,Vipraj Nigam,92.69,6,47,105,2.1316,-0.9503,3.0819,1.0,0.2875,ELIGIBLE
+2,6651,Towhid Hridoy,92.25,4,81,138,1.9516,0.0339,1.9177,1.0,0.569,ELIGIBLE
+3,796,Matthew Wade,91.43,9,105,177,1.693,0.0602,1.6328,0.8889,0.4759,ELIGIBLE
+4,6448,Ibrahim Zadran,90.45,4,55,80,2.0152,0.1428,1.8724,1.0,0.8358,ELIGIBLE
+5,152,Ravindra Jadeja,84.8,23,233,382,0.9979,0.0232,0.9747,0.7391,0.3051,ELIGIBLE
+6,1219,David Willey,84.05,8,62,77,1.5563,-1.5015,3.0578,0.875,2.6941,ELIGIBLE
+7,2984,Sikandar Raza,80.96,7,72,147,1.4098,-0.0127,1.4225,0.7143,1.0904,ELIGIBLE
+8,4708,Rinku Singh,80.77,15,204,408,1.5271,0.3412,1.1859,0.6667,0.5816,ELIGIBLE
+9,7897,Namboori Tilak Varma,80.62,17,168,321,1.0323,0.3701,0.6622,0.7647,0.9241,ELIGIBLE
+10,4686,Joshua Clarkson,80.21,4,52,70,1.0796,0.0539,1.0257,0.75,0.7214,ELIGIBLE

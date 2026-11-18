@@ -1,0 +1,212 @@
+{
+  "8000": {
+    "/": {
+      "port": 8000,
+      "url": "http://127.0.0.1:8000/",
+      "status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "has_error_31": false,
+      "audit": {
+        "innerTextLength": 4408,
+        "hasEvaluatedBatters": true,
+        "hasEvaluatedBowlers": true,
+        "hasMatchesCount": true,
+        "hasDeliveriesCount": true,
+        "hasVipraj": true,
+        "hasSiddharth": true,
+        "hasIPL2025": false,
+        "hasLowPressure": true,
+        "hasHighPressure": true,
+        "hasCrashUI": false,
+        "barsCount": 138,
+        "svgCount": 1,
+        "preview": "SupeRR LAB S2 CRICKET ANALYTICS Overview Data Explorer Match Replay Pressure Lab Player Intelligence Reliability Rankings Methodology & Reports Data Pipeline Status Deliveries: 200,999 Matches: 883 Validation: 100% Passed v2.0 \u2022 RR Design System API Overview Rajasthan Royals Analytics SupeRR Select"
+      },
+      "screenshot": "reports\\phase7\\screenshot_overview_repaired_8000.png"
+    },
+    "/explorer": {
+      "route": "/explorer",
+      "http_status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "dom_info": {
+        "textLength": 2315,
+        "hasAside": true,
+        "hasHeader": true,
+        "hasMain": true
+      },
+      "screenshot": "reports\\phase7\\screenshot_8000_explorer.png"
+    },
+    "/replay": {
+      "route": "/replay",
+      "http_status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "dom_info": {
+        "textLength": 4748,
+        "hasAside": true,
+        "hasHeader": true,
+        "hasMain": true
+      },
+      "screenshot": "reports\\phase7\\screenshot_8000_replay.png"
+    },
+    "/pressure": {
+      "route": "/pressure",
+      "http_status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "dom_info": {
+        "textLength": 3535,
+        "hasAside": true,
+        "hasHeader": true,
+        "hasMain": true
+      },
+      "screenshot": "reports\\phase7\\screenshot_8000_pressure.png"
+    },
+    "/players": {
+      "route": "/players",
+      "http_status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "dom_info": {
+        "textLength": 5726,
+        "hasAside": true,
+        "hasHeader": true,
+        "hasMain": true
+      },
+      "screenshot": "reports\\phase7\\screenshot_8000_players.png"
+    },
+    "/rankings": {
+      "route": "/rankings",
+      "http_status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "dom_info": {
+        "textLength": 12020,
+        "hasAside": true,
+        "hasHeader": true,
+        "hasMain": true
+      },
+      "screenshot": "reports\\phase7\\screenshot_8000_rankings.png"
+    },
+    "/reports": {
+      "route": "/reports",
+      "http_status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "dom_info": {
+        "textLength": 5356,
+        "hasAside": true,
+        "hasHeader": true,
+        "hasMain": true
+      },
+      "screenshot": "reports\\phase7\\screenshot_8000_reports.png"
+    }
+  },
+  "5173": {
+    "/": {
+      "port": 5173,
+      "url": "http://127.0.0.1:5173/",
+      "status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "has_error_31": false,
+      "audit": {
+        "innerTextLength": 4408,
+        "hasEvaluatedBatters": true,
+        "hasEvaluatedBowlers": true,
+        "hasMatchesCount": true,
+        "hasDeliveriesCount": true,
+        "hasVipraj": true,
+        "hasSiddharth": true,
+        "hasIPL2025": false,
+        "hasLowPressure": true,
+        "hasHighPressure": true,
+        "hasCrashUI": false,
+        "barsCount": 138,
+        "svgCount": 1,
+        "preview": "SupeRR LAB S2 CRICKET ANALYTICS Overview Data Explorer Match Replay Pressure Lab Player Intelligence Reliability Rankings Methodology & Reports Data Pipeline Status Deliveries: 200,999 Matches: 883 Validation: 100% Passed v2.0 \u2022 RR Design System API Overview Rajasthan Royals Analytics SupeRR Select"
+      },
+      "screenshot": "reports\\phase7\\screenshot_overview_repaired_5173.png"
+    },
+    "/explorer": {
+      "route": "/explorer",
+      "http_status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "dom_info": {
+        "textLength": 2315,
+        "hasAside": true,
+        "hasHeader": true,
+        "hasMain": true
+      },
+      "screenshot": "reports\\phase7\\screenshot_5173_explorer.png"
+    },
+    "/replay": {
+      "route": "/replay",
+      "http_status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "dom_info": {
+        "textLength": 4748,
+        "hasAside": true,
+        "hasHeader": true,
+        "hasMain": true
+      },
+      "screenshot": "reports\\phase7\\screenshot_5173_replay.png"
+    },
+    "/pressure": {
+      "route": "/pressure",
+      "http_status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "dom_info": {
+        "textLength": 3535,
+        "hasAside": true,
+        "hasHeader": true,
+        "hasMain": true
+      },
+      "screenshot": "reports\\phase7\\screenshot_5173_pressure.png"
+    },
+    "/players": {
+      "route": "/players",
+      "http_status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "dom_info": {
+        "textLength": 5726,
+        "hasAside": true,
+        "hasHeader": true,
+        "hasMain": true
+      },
+      "screenshot": "reports\\phase7\\screenshot_5173_players.png"
+    },
+    "/rankings": {
+      "route": "/rankings",
+      "http_status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "dom_info": {
+        "textLength": 12020,
+        "hasAside": true,
+        "hasHeader": true,
+        "hasMain": true
+      },
+      "screenshot": "reports\\phase7\\screenshot_5173_rankings.png"
+    },
+    "/reports": {
+      "route": "/reports",
+      "http_status": 200,
+      "console_errors": [],
+      "page_errors": [],
+      "dom_info": {
+        "textLength": 5356,
+        "hasAside": true,
+        "hasHeader": true,
+        "hasMain": true
+      },
+      "screenshot": "reports\\phase7\\screenshot_5173_reports.png"
+    }
+  }
+}

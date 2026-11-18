@@ -1,0 +1,11 @@
+rank,player_id,player_name,reliability_score,pressure_matches,pressure_legal_balls,pressure_runs_conceded,pressure_wickets,high_pressure_impact,ordinary_performance_baseline,pressure_uplift,consistency_metric,uncertainty_measure,eligibility_status
+1,6237,Manimaran Siddharth,88.46,3,38,52,5,1.8374,-0.3603,2.1977,1.0,0.6886,ELIGIBLE
+2,29080,Muhammad Khan,88.39,3,50,79,6,1.3838,-0.4766,1.8604,1.0,0.5051,ELIGIBLE
+3,7699,Abbas Afridi,88.32,14,159,250,19,1.2669,0.4464,0.8205,0.8571,0.5432,ELIGIBLE
+4,4856,Benjamin Sears,86.06,6,49,80,7,1.8047,0.057,1.7477,0.8333,1.0957,ELIGIBLE
+5,6097,Brydon Carse,84.21,5,55,63,5,1.1038,-0.0264,1.1302,1.0,0.8376,ELIGIBLE
+6,8009,Junaid Siddique,84.01,10,44,56,5,1.4796,0.3387,1.1409,0.8,0.5151,ELIGIBLE
+7,27504,Dushan Hemantha,82.58,5,73,91,9,1.7455,1.0289,0.7166,0.8,1.5528,ELIGIBLE
+8,5809,Naveen ul Haq,81.1,10,93,177,12,1.3173,0.088,1.2293,0.7,0.6153,ELIGIBLE
+9,4779,Pieter Willem Mulder,77.44,4,36,66,4,1.1316,-0.3084,1.44,0.75,1.5856,ELIGIBLE
+10,4499,Saqib Mahmood,77.29,6,36,51,4,1.1926,0.3368,0.8558,0.8333,3.368,ELIGIBLE

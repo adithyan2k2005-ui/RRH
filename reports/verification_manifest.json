@@ -1,0 +1,259 @@
+{
+  "manifest_version": "2.0.0",
+  "generated_at": "2026-11-18T15:33:21.924781+00:00",
+  "overall_status": "PASS_WITH_WARNINGS",
+  "submission_readiness": "PASS",
+  "website_readiness": "PASS",
+  "summary": {
+    "total_phases_evaluated": 7,
+    "total_tests": 138,
+    "passed_tests": 138,
+    "failed_tests": 0,
+    "skipped_tests": 0,
+    "execution_duration_seconds": 17.31,
+    "submission_gates_passed": 12,
+    "submission_gates_total": 12
+  },
+  "phases": {
+    "1": {
+      "phase_number": 1,
+      "phase_id": 1,
+      "phase_name": "Ingestion & Data Quality",
+      "name": "Ingestion & Data Quality",
+      "status": "PASS_WITH_WARNINGS",
+      "validation_command": "pytest tests/test_ingestion.py tests/test_validation.py",
+      "execution_timestamp": "2026-11-18T15:33:08.421019+00:00",
+      "exit_code": 0,
+      "test_count": 17,
+      "passed_tests": 17,
+      "failed_tests": 0,
+      "skipped_tests": 0,
+      "artifacts_available": true,
+      "data_consistency_outcome": "883 matches, 200,999 deliveries, 141 competitions verified in parquet",
+      "known_blockers": [],
+      "warnings": [
+        "19 raw speed gun outliers (e.g. 19.8 km/h or 220 km/h) excluded from pressure features to protect model integrity.",
+        "16 weather-abandoned matches recorded 0 deliveries; preserved as valid fixture metadata.",
+        "3 competitions in registry have 0 match fixtures; accounted for in coverage funnels."
+      ],
+      "report_path": "reports/phase1/data_quality_report.md",
+      "deliverable": "data/processed/*.parquet (6 relational tables)",
+      "key_output": "data/processed/*.parquet (6 relational tables)",
+      "description": "Relational ingestion of 6 tables, referential integrity check, encoding validation."
+    },
+    "2": {
+      "phase_number": 2,
+      "phase_id": 2,
+      "phase_name": "Match-State Reconstruction",
+      "name": "Match-State Reconstruction",
+      "status": "PASS",
+      "validation_command": "pytest tests/test_match_state.py tests/test_cricket_rules.py tests/test_delivery_order.py tests/test_match_state_integration.py",
+      "execution_timestamp": "2026-11-18T15:33:11.538734+00:00",
+      "exit_code": 0,
+      "test_count": 16,
+      "passed_tests": 16,
+      "failed_tests": 0,
+      "skipped_tests": 0,
+      "artifacts_available": true,
+      "data_consistency_outcome": "200,999 match-state delivery rows with zero future data leakage",
+      "known_blockers": [],
+      "warnings": [
+        "34 weather-affected matches with revised DLS targets accounted for with official adjusted par calculations.",
+        "6 tied fixtures resulting in 12 Super Over innings reconstructed with zero-leakage state tracking."
+      ],
+      "report_path": "reports/phase2/reconstruction_verification.md",
+      "deliverable": "data/processed/match_states.parquet (200,999 rows)",
+      "key_output": "data/processed/match_states.parquet (200,999 rows)",
+      "description": "Chronological delivery ordering, legal ball flags, zero future data leakage pre-ball state."
+    },
+    "3": {
+      "phase_number": 3,
+      "phase_id": 3,
+      "phase_name": "Pressure Detection Engine",
+      "name": "Pressure Detection Engine",
+      "status": "PASS",
+      "validation_command": "pytest tests/test_pressure_features.py tests/test_pressure_integration.py tests/test_pressure_leakage.py tests/test_pressure_model.py",
+      "execution_timestamp": "2026-11-18T15:33:13.171139+00:00",
+      "exit_code": 0,
+      "test_count": 21,
+      "passed_tests": 21,
+      "failed_tests": 0,
+      "skipped_tests": 0,
+      "artifacts_available": true,
+      "data_consistency_outcome": "Dual asymmetric pressure scores computed across 200,999 deliveries",
+      "known_blockers": [],
+      "warnings": [],
+      "report_path": "reports/phase3/pressure_model_report.md",
+      "deliverable": "data/processed/pressure_states.parquet (77 columns)",
+      "key_output": "data/processed/pressure_states.parquet (77 columns)",
+      "description": "Dual asymmetric pressure modeling (0-100) separating batting difficulty from bowling urgency."
+    },
+    "4": {
+      "phase_number": 4,
+      "phase_id": 4,
+      "phase_name": "Performance & Reliability Scoring",
+      "name": "Performance & Reliability Scoring",
+      "status": "PASS",
+      "validation_command": "pytest tests/test_batting_metrics.py tests/test_bowling_metrics.py tests/test_consistency.py tests/test_expected_performance.py tests/test_player_baselines.py tests/test_reliability.py tests/test_reliability_audit.py tests/test_phase4_integration.py",
+      "execution_timestamp": "2026-11-18T15:33:14.830552+00:00",
+      "exit_code": 0,
+      "test_count": 31,
+      "passed_tests": 31,
+      "failed_tests": 0,
+      "skipped_tests": 0,
+      "artifacts_available": true,
+      "data_consistency_outcome": "888 batters (155 eligible) and 647 bowlers (270 eligible) scored with Empirical Bayes shrinkage",
+      "known_blockers": [],
+      "warnings": [],
+      "report_path": "reports/phase4/reliability_scoring_report.md",
+      "deliverable": "player_batting_metrics & player_bowling_metrics.parquet",
+      "key_output": "player_batting_metrics & player_bowling_metrics.parquet",
+      "description": "Hierarchical leave-one-match-out baselines, Empirical Bayes shrinkage, cluster consistency."
+    },
+    "5": {
+      "phase_number": 5,
+      "phase_id": 5,
+      "phase_name": "Top-10 Rankings & Verification",
+      "name": "Top-10 Rankings & Verification",
+      "status": "PASS",
+      "validation_command": "pytest tests/test_ranking_eligibility.py tests/test_ranking_engine.py tests/test_ranking_integrity.py tests/test_ranking_stability.py tests/test_phase5_integration.py tests/test_submission_integrity.py tests/test_dataset_integrity.py",
+      "execution_timestamp": "2026-11-18T15:33:17.191179+00:00",
+      "exit_code": 0,
+      "test_count": 29,
+      "passed_tests": 29,
+      "failed_tests": 0,
+      "skipped_tests": 0,
+      "artifacts_available": true,
+      "data_consistency_outcome": "Top 10 Batters (Vipraj Nigam #1) and Top 10 Bowlers (Manimaran Siddharth #1) verified",
+      "known_blockers": [],
+      "warnings": [],
+      "report_path": "reports/phase5/ranking_evidence.md",
+      "deliverable": "outputs/top_10_batters.csv & outputs/top_10_bowlers.csv",
+      "key_output": "outputs/top_10_batters.csv & outputs/top_10_bowlers.csv",
+      "description": "Deterministic tie-breaking, micro-reconciliation, leave-best-match-out robustness."
+    },
+    "6": {
+      "phase_number": 6,
+      "phase_id": 6,
+      "phase_name": "Methodology Report & Packaging",
+      "name": "Methodology Report & Packaging",
+      "status": "PASS",
+      "validation_command": "scripts/verify_project.py --phase 6",
+      "execution_timestamp": "2026-11-18T15:33:17.260363+00:00",
+      "exit_code": 0,
+      "test_count": 8,
+      "passed_tests": 8,
+      "failed_tests": 0,
+      "skipped_tests": 0,
+      "artifacts_available": true,
+      "data_consistency_outcome": "8-page methodology PDF, markdown source, CSV outputs, and ZIP bundle verified",
+      "known_blockers": [],
+      "warnings": [],
+      "report_path": "submission/submission_validation.md",
+      "deliverable": "submission/methodology_report.pdf & submission archive",
+      "key_output": "submission/methodology_report.pdf & submission archive",
+      "description": "Official 8-page publication PDF, 17 mandatory sections, submission ZIP archive."
+    },
+    "7": {
+      "phase_number": 7,
+      "phase_id": 7,
+      "phase_name": "Full-Stack Web Application",
+      "name": "Full-Stack Web Application",
+      "status": "PASS",
+      "validation_command": "pytest tests/backend/test_api_endpoints.py tests/backend/test_overview_contract.py",
+      "execution_timestamp": "2026-11-18T15:33:19.598083+00:00",
+      "exit_code": 0,
+      "test_count": 16,
+      "passed_tests": 16,
+      "failed_tests": 0,
+      "skipped_tests": 0,
+      "artifacts_available": true,
+      "data_consistency_outcome": "FastAPI backend endpoints & React 18 production bundle verified with 0 contract errors",
+      "known_blockers": [],
+      "warnings": [],
+      "report_path": "reports/critical_repairs/repair3/completion_report.md",
+      "deliverable": "FastAPI Backend & React SPA (7 Interactive Pages)",
+      "key_output": "FastAPI Backend & React SPA (7 Interactive Pages)",
+      "description": "Rajasthan Royals-themed intelligence dashboard, 7 audited routes, contract-safe Recharts visualizations."
+    }
+  },
+  "submission_gates": {
+    "GATE_1": {
+      "gate_number": 1,
+      "title": "Exactly ten valid batting selections",
+      "status": "PASS",
+      "details": "Found 10 batters, all 10 verified ELIGIBLE with >= 20 HP balls and >= 3 HP matches"
+    },
+    "GATE_2": {
+      "gate_number": 2,
+      "title": "Exactly ten valid bowling selections",
+      "status": "PASS",
+      "details": "Found 10 bowlers, all 10 verified ELIGIBLE with >= 30 HP legal balls and >= 3 HP matches"
+    },
+    "GATE_3": {
+      "gate_number": 3,
+      "title": "No duplicate IDs within either list",
+      "status": "PASS",
+      "details": "Unique batting IDs: 10/10; Unique bowling IDs: 10/10"
+    },
+    "GATE_4": {
+      "gate_number": 4,
+      "title": "Player names and IDs match verified source mappings",
+      "status": "PASS",
+      "details": "All 20 candidate IDs and names match authoritative competition_team_player_mapping exactly"
+    },
+    "GATE_5": {
+      "gate_number": 5,
+      "title": "Ranking order follows the implemented reliability score",
+      "status": "PASS",
+      "details": "Batters monotonic decreasing: True; Bowlers monotonic decreasing: True"
+    },
+    "GATE_6": {
+      "gate_number": 6,
+      "title": "The report's scoring formulas match the verified implementation",
+      "status": "PASS",
+      "details": "Methodology report specifies implemented weights 0.40/0.25/0.20/0.15 and logistic shrinkage formulas"
+    },
+    "GATE_7": {
+      "gate_number": 7,
+      "title": "Report statistics match verified source and processed datasets",
+      "status": "PASS",
+      "details": "Dataset counts in report match verified source data: 883 matches, 200,999 deliveries, 141 competitions"
+    },
+    "GATE_8": {
+      "gate_number": 8,
+      "title": "Ranking evidence is present",
+      "status": "PASS",
+      "details": "Full dossier profiles and match-level proof compiled in ranking_evidence.md (13461 bytes)"
+    },
+    "GATE_9": {
+      "gate_number": 9,
+      "title": "Required fairness and uncertainty discussion is present",
+      "status": "PASS",
+      "details": "Sample-size fairness, cluster uncertainty standard errors, and model limitations discussed in report"
+    },
+    "GATE_10": {
+      "gate_number": 10,
+      "title": "Methodology PDF opens and contains the required sections",
+      "status": "PASS",
+      "details": "8-page publication PDF verified; core sections, verified 20-player identities, and accurate cricket rules confirmed"
+    },
+    "GATE_11": {
+      "gate_number": 11,
+      "title": "Critical statistical tests pass",
+      "status": "PASS",
+      "details": "29 statistical and integrity tests executed and passed without failures"
+    },
+    "GATE_12": {
+      "gate_number": 12,
+      "title": "The Unstop selection reference agrees with both ranking files",
+      "status": "PASS",
+      "details": "All 10 batters and 10 bowlers in submission_selections.md match official CSVs exactly"
+    }
+  },
+  "system_info": {
+    "python_version": "3.13.7",
+    "git_revision": null,
+    "os": "nt"
+  }
+}

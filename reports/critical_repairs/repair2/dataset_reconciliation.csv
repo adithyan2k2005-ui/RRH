@@ -1,0 +1,7 @@
+table_name,raw_filename,processed_filename,raw_row_count,processed_row_count,row_discrepancy,raw_column_count,processed_column_count,column_discrepancy,raw_unique_ids,processed_unique_ids,join_multiplication_detected,record_loss_detected,traceability_status
+competitions,competitions.csv,competitions.parquet,141,141,0,4,4,0,141,141,False,False,EXACT_1_TO_1_MATCH
+teams,teams.csv,teams.parquet,353,353,0,3,3,0,38,38,False,False,EXACT_1_TO_1_MATCH
+matches,matches.csv,matches.parquet,883,883,0,22,22,0,883,883,False,False,EXACT_1_TO_1_MATCH
+ball_by_ball,ball_by_ball.csv,ball_by_ball.parquet,200999,200999,0,33,33,0,867,867,False,False,EXACT_1_TO_1_MATCH
+competition_team_player_mapping,competition_team_player_mapping.csv,competition_team_player_mapping.parquet,6413,6413,0,6,6,0,1217,1217,False,False,EXACT_1_TO_1_MATCH
+playing_eleven,playing_eleven.csv,playing_eleven.parquet,28381,28381,0,9,9,0,880,880,False,False,EXACT_1_TO_1_MATCH
