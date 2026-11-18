@@ -30,6 +30,18 @@ pnpm-debug.log*
 .temp/
 .tmp/
 
+# Environment & Secret files (strictly ignored to protect private info & keys)
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.token
+*.p12
+credentials.json
+client_secret*.json
+
 # System metadata
 .DS_Store
 __MACOSX/
